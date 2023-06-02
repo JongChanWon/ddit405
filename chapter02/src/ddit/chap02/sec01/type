@@ -1,0 +1,23 @@
+자바는 문자열 위주(우선)
+	문자열 + anytype (anytype이 문자열이 됨)
+	문자열 + 문자열 => 문자열
+	
+연산식에서 int 보다 작은 타입 (byte, short, char)는 int타입으로 자동 형변환됨
+
+*short:	2byte정수타입 (32767 ~ -32768)
+		연산결과가 최대(최소)값의 범위를 벗어나면 최소(최대) 값으로 변환
+		
+*int:	기본정수형(2147483647 ~ -2147483648)
+		연산식에서 int보다 작은 값은 int로 자동 형변환 => promotion 
+		
+*float:	4byte에 저장되는 실수(실수 literal끝에 F(f) 추가)
+		long과 같이 연산되는 경우 long타입이 float으로 형변환
+		
+*double:	8byte에 저장되는 실수(실수 literal끝에 D(d) 추가)
+
+*boolean:	true와 false를 저장하는 자료 타입 (다른 타입과 형변환 되지 않음)
+			조건식에 주로 사용
+			
+
+키보드로 자료를 입력받는 방법 (Scanner class 사용)
+1) Scanner class 객체 생성 => new 연산자 사용
