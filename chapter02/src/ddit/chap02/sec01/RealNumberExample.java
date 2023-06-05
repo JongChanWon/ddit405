@@ -20,5 +20,6 @@ public class RealNumberExample {
 		float b = 3.1f;
 		System.out.println(a); // 변환오차
 		System.out.println(b);
+
 	}
 }
