@@ -10,7 +10,7 @@ public class BinaryOperatorExample {
 		// 사칙연산자: +, -, /, *, %
 		// fourProngedOperator();
 		// 관계연산자: >, <, ==, >=, <=, !=(<>)
-		// relationalOperator();
+		relationalOperator();
 		// 논리연산자: !(not), &&(and), ||(or) ==> 결과가 참or거짓
 		// logicalOperator();
 		// 할당연산자: =
@@ -22,7 +22,7 @@ public class BinaryOperatorExample {
 		// bitWiser();
 		// 이동연산자: >>(right shift), <<(left shift)
 		// >>>( "")
-		shiftOperator();
+		// shiftOperator();
 
 	}
 

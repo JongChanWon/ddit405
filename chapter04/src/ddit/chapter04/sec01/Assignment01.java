@@ -2,7 +2,7 @@ package ddit.chapter04.sec01;
 
 import java.util.Scanner;
 
-public class Assignment {
+public class Assignment01 {
 	public static void main(String[] args) {
 		// 컴퓨터와 가위바위보 게임을하는 프로그램을 작성하시오..
 		// 1. 컴퓨터는 1-3사이의 난수를 발생시킨다.
