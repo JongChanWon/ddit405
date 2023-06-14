@@ -1,4 +1,4 @@
-package ddit.chapter04.sec01;
+package ddit.chapt04.sec01;
 
 import java.util.Scanner;
 
