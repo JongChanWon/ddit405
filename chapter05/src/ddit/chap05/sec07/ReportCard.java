@@ -36,10 +36,8 @@ public class ReportCard {
 	public void orderedRank() {
 		// 등수를 기준으로 1등부터 내림차순으로 정렬
 		for (int i = 0; i < score.length; i++) {
-			System.out.print((name[i] + "\t"));
-			for (int j = 0; j < score[i].length; j++) {
-				System.out.println(score[i][j] + "\t");
-				for (int k = 0; k < name.length; k++) {
+			for (int j = 0; j < score.length; j++) {
+				for (int k = 0; k < score.length; k++) {
 
 				}
 			}
@@ -62,7 +60,7 @@ public class ReportCard {
 
 		calculateGrade();
 		rank();
-//		ex();
+		ex();
 		// 이름, 점수 뽑아내는 for문
 		for (int i = 0; i < score.length; i++) {
 			System.out.print(name[i] + "\t");
