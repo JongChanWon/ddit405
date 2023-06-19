@@ -12,6 +12,8 @@ public class SwitchStatementExample {
 		// sse.switchMethod2();
 		// sse.switchMethod3();
 		sse.switchMethod4();
+		// System.out.println(sse.switchMethod1());
+		// 반환타입이 없는 메서드(void)는 println() 안에 쓸 수 없다.
 	}
 
 	public void switchMethod1() {
