@@ -32,7 +32,6 @@ public class Student extends Person {
 		double avg = 0;
 		sum = kor + eng + mat;
 		avg = (double) (sum / 3);
-		System.out.println();
 	}
 
 //	public int calculateScore() {
@@ -41,8 +40,11 @@ public class Student extends Person {
 //	}
 
 	public void printScore(Person person) {
-		// 부모클래스의 getName() 사용
 		person.getName();
-
+		System.out.println("성적표");
+		System.out.println(kor);
+		System.out.println(eng);
+		System.out.println(mat);
+		calculateScore();
 	}
 }
