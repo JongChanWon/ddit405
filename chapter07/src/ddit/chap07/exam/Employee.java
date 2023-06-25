@@ -97,18 +97,19 @@ public class Employee {
 
 	// 월급 계산
 	public int salaryInfo() {
-		int salary = (int) ((yearSalary / 12) * 0.08); // 월급
+		int salary = (int) ((yearSalary/12) - (yearSalary / 12) * 0.08); // 월급 (매달 세금으로 8%를 빼고 수령)
 		return salary;
 	}
 
 	// 연봉 협상 최대 2.5%
-	public int salaryHyubsang() {
+	public int salaryNego() {
 		int maxSalary = (int) (yearSalary * 0.025);
 
 		return maxSalary;
 	}
-
+	
+	// 직원 정보 출력
 	public void printEmpInfo() {
-		System.out.println("이름: " + ename + "\n부서: " + dept + "\n직급: " + position + "연봉: " + yearSalary);
+		System.out.println("이름: " + ename + "\n부서: " + dept + "\n직급: " + position + "\n연봉: " + yearSalary);
 	}
 }
