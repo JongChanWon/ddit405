@@ -27,5 +27,34 @@ public class DD {
 		}
 		System.out.println(expr + (oddSum + evenSum));
 
+		int n = 1;
+		String answer = String.valueOf(n);
+		System.out.println("==================");
+		System.out.println(answer);
+
+		String a = "programmers";
+
+		String my_string = "programmers";
+		String alp = "P";
+
+		System.out.println(my_string.replace(alp, my_string));
+
+		String answer1 = my_string.replaceAll(my_string, alp);
+		System.out.println(answer1);
+		System.out.println(my_string.compareTo(alp));
+		
+		int a1 = math();
+		System.out.println(a1);
+	}
+
+	public static int math() {
+		int[] num_list = { 1, 2, 4, 5 };
+		int n1 = 3;
+		for (int i = 0; i < num_list.length; i++) {
+			if (num_list[i] == n1) {
+				return 1;
+			}
+		}
+		return 0;
 	}
 }
