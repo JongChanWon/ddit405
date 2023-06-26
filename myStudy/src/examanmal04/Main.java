@@ -72,3 +72,20 @@ public class Main {
 		}
 	}
 }
+
+
+
+
+class a{
+	class b{
+		class c{
+			
+		}
+	}
+}
+
+interface i{
+	interface j{
+		
+	}
+}

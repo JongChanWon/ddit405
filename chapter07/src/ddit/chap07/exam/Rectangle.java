@@ -15,14 +15,13 @@ public class Rectangle {
 		this.y = y;
 		this.width = width;
 		this.length = length;
-		System.out.println("초기좌표-> x: " + x + ", y: " + y); // 초기 좌표
+
 	}
 
 	// 면적을 통해 사각형 생성
 	public void getVolume() {
 		System.out.println("면적: " + width * length);
-		
-		System.out.println("x좌표: " + (x += width) + " y좌표: " + (y += length));
+		System.out.println("\nx좌표: " + (x += width) + " y좌표: " + (y += length));
 		System.out.println("가로: " + width + "\n세로: " + length + "\n사각형이 생성되었습니다");
 
 	}
