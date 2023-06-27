@@ -1,6 +1,7 @@
 package lotto;
 
 import java.util.ArrayList;
+import java.util.Calendar;
 import java.util.List;
 import java.util.Scanner;
 
@@ -21,7 +22,9 @@ public class Membership {
 	Scanner sc = new Scanner(System.in);
 
 	private String name;
-	private String bornYear;
+	private String personalYY; // 태어난 년도
+	private String personalMM; // 태어난 월
+	private String personalDD; // 태어난 일
 	private String email;
 	private String address;
 	private String pw;
@@ -29,9 +32,12 @@ public class Membership {
 	public Membership() {
 	}
 
-	public Membership(String name, String bornYear, String email, String address, String pw) {
+	public Membership(String name, String personalYY, String personalMM, String personalDD, String email,
+			String address, String pw) {
 		this.name = name;
-		this.bornYear = bornYear;
+		this.personalYY = personalYY;
+		this.personalMM = personalMM;
+		this.personalDD = personalDD;
 		this.email = email;
 		this.address = address;
 		this.pw = pw;
@@ -63,10 +69,22 @@ public class Membership {
 
 	public void personalData() {
 		List<Membership> member = new ArrayList<Membership>();
-		System.out.print("성함: ");
+		System.out.print("이름: ");
 		String name = sc.next();
-		System.out.print("출생년도: ");
-		String bornYear = sc.next();
+		
+		int personalYY = 0;
+		int personalMM = 0;
+		int personalDD = 0;
+		
+		Calendar cal = Calendar.getInstance();
+		int yy = cal.get(Calendar.YEAR);
+		for(;;) {
+			System.out.print("출생년도: ");
+			personalYY = sc.nextInt();
+			
+			
+		}
+		
 		System.out.print("이메일: ");
 		String email = sc.next();
 		System.out.print("주소: ");
